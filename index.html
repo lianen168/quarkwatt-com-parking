@@ -3,620 +3,474 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuarkWatt.com - Premium Domain for Sale | Energy & Technology</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>QuarkWatt.com | The Fundamental Unit of Future Energy</title>
+    <meta name="description" content="Premium Domain For Sale: QuarkWatt.com. Where Quantum Physics meets Exascale Energy. 'Energy is the real currency.' Price: $3,690.">
+    <meta name="keywords" content="QuarkWatt, Exawatts, Energy Currency, Quantum Energy, Fusion Power, AI Data Centers, Crypto Mining, Musk Energy, Domain For Sale">
+    <meta name="author" content="Joshua">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="QuarkWatt.com - Exawatts or Nothing">
+    <meta property="og:description" content="The intersection of Subatomic Physics and Massive Energy. Own the future of power. Price: $3,690.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quarkwatt.com">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "QuarkWatt.com Domain Name",
+      "description": "Premium domain name QuarkWatt.com, representing the fusion of quantum mechanics and high-output energy systems.",
+      "sku": "QUARK-WATT-DOM",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.spaceship.com/s/buy/quarkwatt.com/II0AkbsdOiKMK4IZ",
+        "priceCurrency": "USD",
+        "price": "3690.00",
+        "priceValidUntil": "2030-01-01",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+
     <style>
+        :root {
+            --quark-purple: #bc13fe;
+            --watt-yellow: #fff700;
+            --electric-blue: #00f3ff;
+            --bg-color: #050508;
+            --card-bg: rgba(20, 20, 25, 0.8);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', 'Arial', sans-serif;
         }
-        
+
         body {
-            background-color: #0a0e17;
-            color: #e0f0ff;
-            min-height: 100vh;
+            background-color: var(--bg-color);
+            color: #fff;
+            font-family: 'Rajdhani', sans-serif;
             overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(41, 84, 163, 0.15) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(255, 75, 75, 0.1) 0%, transparent 20%);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
+
+        /* Quantum Field Background */
+        .quantum-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 50% 50%, rgba(188, 19, 254, 0.05) 0%, transparent 50%),
+                linear-gradient(0deg, transparent 24%, rgba(0, 243, 255, .03) 25%, rgba(0, 243, 255, .03) 26%, transparent 27%, transparent 74%, rgba(0, 243, 255, .03) 75%, rgba(0, 243, 255, .03) 76%, transparent 77%, transparent),
+                linear-gradient(90deg, transparent 24%, rgba(0, 243, 255, .03) 25%, rgba(0, 243, 255, .03) 26%, transparent 27%, transparent 74%, rgba(0, 243, 255, .03) 75%, rgba(0, 243, 255, .03) 76%, transparent 77%, transparent);
+            background-size: 100% 100%, 50px 50px, 50px 50px;
+            animation: bgShift 100s linear infinite;
         }
-        
-        /* Header */
+
+        @keyframes bgShift {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+
+        /* Hero Section */
         header {
+            min-height: 90vh;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 0;
-            border-bottom: 1px solid rgba(64, 156, 255, 0.2);
-            position: relative;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #00a8ff 0%, #0062ff 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 8rem);
+            margin-bottom: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            line-height: 1.1;
+        }
+
+        /* 1. QUARK - Subatomic Glitch */
+        .word-quark {
+            font-family: 'Audiowide', cursive;
+            color: var(--quark-purple);
+            text-shadow: 2px 2px 0px #00f3ff;
+            animation: glitch 3s infinite alternate-reverse;
+            margin-right: 5px;
+        }
+
+        /* 2. WATT - High Voltage */
+        .word-watt {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            color: var(--watt-yellow);
+            text-shadow: 0 0 20px var(--watt-yellow), 0 0 40px #ffaa00;
+            animation: voltagePulse 0.2s infinite alternate;
+        }
+
+        /* 3. .COM - Digital */
+        .word-ext {
+            font-size: 0.3em;
+            color: #888;
+            font-family: 'Rajdhani', sans-serif;
+            animation: fadeBlink 2s infinite;
+        }
+
+        /* MUSK QUOTES - Dynamic Display */
+        .musk-quote-container {
+            margin: 30px 0;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0,0,0,0.5);
+        }
+
+        .quote-primary {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.2rem, 4vw, 2.5rem);
+            background: linear-gradient(90deg, #fff, var(--electric-blue), #fff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .quote-secondary {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            color: var(--watt-yellow);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: typeWriter 4s steps(40) infinite alternate;
+            border-right: 3px solid var(--quark-purple);
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        /* Price */
+        .price-box {
+            margin: 30px 0;
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255,255,255,0.5);
+        }
+
+        .installments {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--quark-purple), var(--electric-blue));
+            color: #fff;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 10px;
+            box-shadow: 0 0 15px rgba(188, 19, 254, 0.5);
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 20px 50px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+        }
+
+        .btn-buy {
+            background-color: var(--watt-yellow);
+            color: #000;
+        }
+
+        .btn-buy:hover {
+            background-color: #fff;
+            box-shadow: 0 0 30px var(--watt-yellow);
+            transform: scale(1.05);
+        }
+
+        .btn-contact {
+            background: transparent;
+            border: 2px solid var(--electric-blue);
+            color: var(--electric-blue);
+        }
+
+        .btn-contact:hover {
+            background: var(--electric-blue);
+            color: #000;
+            box-shadow: 0 0 30px var(--electric-blue);
+        }
+
+        /* Grid Section */
+        .grid-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #fff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            padding: 2rem;
+            transition: 0.3s;
             position: relative;
             overflow: hidden;
         }
-        
-        .logo-icon::after {
+
+        .card::before {
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
-            background: #ff2a6d;
-            border-radius: 50%;
-            filter: blur(8px);
-            opacity: 0.7;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--quark-purple);
         }
-        
-        .logo-text {
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: linear-gradient(90deg, #00a8ff, #9d4edd, #ff2a6d);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: 1px;
-        }
-        
-        .logo-subtitle {
-            font-size: 1rem;
-            color: #8bb9fe;
-            margin-top: -5px;
-            letter-spacing: 2px;
-        }
-        
-        .domain-badge {
-            background: rgba(255, 42, 109, 0.2);
-            border: 1px solid rgba(255, 42, 109, 0.5);
-            padding: 8px 15px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            color: #ffd166;
-        }
-        
-        /* Main Content */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 60px 0 40px;
-            position: relative;
-        }
-        
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            background: linear-gradient(90deg, #00a8ff, #5ce1e6);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            max-width: 800px;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            line-height: 1.6;
-            color: #b8d4ff;
-            max-width: 800px;
-            margin-bottom: 40px;
-        }
-        
-        .highlight {
-            color: #ff2a6d;
-            font-weight: bold;
-        }
-        
-        /* Fusion Animation */
-        .fusion-container {
-            width: 250px;
-            height: 250px;
-            margin: 30px auto;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .fusion-core {
-            width: 100px;
-            height: 100px;
-            background: radial-gradient(circle, #ff2a6d 0%, #ff2a6d 20%, transparent 70%);
-            border-radius: 50%;
-            position: relative;
-            animation: pulse 4s infinite alternate;
-            box-shadow: 0 0 30px 8px rgba(255, 42, 109, 0.7);
-        }
-        
-        .fusion-ring {
-            position: absolute;
-            border-radius: 50%;
-            border: 2px solid;
-            animation: rotate 20s linear infinite;
-        }
-        
-        .ring-1 {
-            width: 160px;
-            height: 160px;
-            border-color: rgba(0, 168, 255, 0.7);
-            animation-duration: 25s;
-            animation-direction: reverse;
-        }
-        
-        .ring-2 {
-            width: 200px;
-            height: 200px;
-            border-color: rgba(157, 78, 221, 0.5);
-            animation-duration: 30s;
-        }
-        
-        .ring-3 {
-            width: 250px;
-            height: 250px;
-            border-color: rgba(255, 42, 109, 0.3);
-            animation-duration: 35s;
-            animation-direction: reverse;
-        }
-        
-        .particle {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            background: #00a8ff;
-            border-radius: 50%;
-            animation: particle-float 3s infinite ease-in-out;
-        }
-        
-        /* Domain Details */
-        .details-section {
-            background: rgba(16, 25, 47, 0.7);
-            border-radius: 20px;
-            padding: 40px;
-            margin: 40px 0;
-            border: 1px solid rgba(64, 156, 255, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 40, 120, 0.3);
-        }
-        
-        .details-title {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 30px;
-            color: #5ce1e6;
-        }
-        
-        .details-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        
-        .detail-card {
-            background: rgba(10, 20, 40, 0.8);
-            border-radius: 15px;
-            padding: 25px 20px;
-            text-align: center;
-            border: 1px solid rgba(0, 168, 255, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .detail-card:hover {
+
+        .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.2);
+            border-color: var(--watt-yellow);
+            box-shadow: 0 0 20px rgba(188, 19, 254, 0.2);
         }
-        
-        .detail-icon {
-            font-size: 2.5rem;
-            color: #9d4edd;
-            margin-bottom: 15px;
-        }
-        
-        .detail-title {
-            font-size: 1.4rem;
-            color: #5ce1e6;
+
+        .card h3 {
+            color: var(--electric-blue);
             margin-bottom: 10px;
-        }
-        
-        .detail-text {
-            color: #b8d4ff;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-        
-        /* Pricing */
-        .pricing-section {
-            background: rgba(16, 25, 47, 0.5);
-            border-radius: 20px;
-            padding: 40px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        
-        .pricing-title {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #5ce1e6;
-        }
-        
-        .price-display {
-            display: inline-block;
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: #ffd166;
-            background: rgba(255, 209, 102, 0.1);
-            padding: 20px 40px;
-            border-radius: 15px;
-            margin: 20px 0;
-            border: 2px solid rgba(255, 209, 102, 0.3);
-        }
-        
-        .price-note {
-            color: #8bb9fe;
+            font-family: 'Orbitron', sans-serif;
             font-size: 1.1rem;
-            margin-top: 10px;
         }
-        
-        .offer-badge {
-            display: inline-block;
-            background: rgba(255, 42, 109, 0.2);
-            color: #ff2a6d;
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-top: 15px;
-            border: 1px solid rgba(255, 42, 109, 0.4);
+
+        .card p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
-        
-        /* Contact */
-        .contact-section {
-            background: rgba(16, 25, 47, 0.7);
-            border-radius: 20px;
-            padding: 40px;
-            margin: 40px 0;
-            text-align: center;
-        }
-        
-        .contact-title {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #5ce1e6;
-        }
-        
-        .contact-email {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 1.5rem;
-            color: #ffd166;
-            background: rgba(255, 209, 102, 0.1);
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            margin: 25px 0;
-            transition: all 0.3s;
-            border: 1px solid rgba(255, 209, 102, 0.3);
-        }
-        
-        .contact-email:hover {
-            background: rgba(255, 209, 102, 0.2);
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(255, 209, 102, 0.2);
-        }
-        
-        .urgency-note {
-            color: #ff8a8a;
-            font-size: 1.1rem;
-            margin-top: 20px;
-            font-weight: 600;
-        }
-        
+
         /* Footer */
         footer {
             text-align: center;
-            padding: 40px 0 30px;
-            border-top: 1px solid rgba(64, 156, 255, 0.2);
-            color: #8bb9fe;
-            font-size: 0.9rem;
+            padding: 3rem;
+            border-top: 1px solid #222;
+            color: #555;
         }
-        
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #00a8ff;
-            margin-bottom: 10px;
+
+        /* Toast */
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: var(--watt-yellow);
+            color: #000;
+            text-align: center;
+            padding: 16px;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
         }
-        
+
+        #toast.show {
+            visibility: visible;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
         /* Animations */
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 30px 8px rgba(255, 42, 109, 0.7); }
-            100% { transform: scale(1.1); box-shadow: 0 0 45px 12px rgba(255, 42, 109, 0.9); }
+        @keyframes glitch {
+            0% { transform: skew(0deg); }
+            20% { transform: skew(-10deg); filter: hue-rotate(90deg); }
+            40% { transform: skew(10deg); }
+            100% { transform: skew(0deg); }
+        }
+
+        @keyframes voltagePulse {
+            0% { opacity: 0.8; }
+            100% { opacity: 1; text-shadow: 0 0 30px var(--watt-yellow); }
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        @keyframes typeWriter {
+            from { width: 0; }
+            to { width: 100%; }
         }
         
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        @keyframes fadeBlink {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
         }
-        
-        @keyframes particle-float {
-            0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
-            50% { transform: translateY(-15px) translateX(8px); opacity: 1; }
+
+        @keyframes fadein {
+            from { bottom: 0; opacity: 0; }
+            to { bottom: 30px; opacity: 1; }
         }
-        
-        /* Responsive */
+
+        @keyframes fadeout {
+            from { bottom: 30px; opacity: 1; }
+            to { bottom: 0; opacity: 0; }
+        }
+
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .logo-text {
-                font-size: 1.8rem;
-            }
-            
-            .details-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .fusion-container {
-                width: 200px;
-                height: 200px;
-            }
-            
-            .fusion-core {
-                width: 80px;
-                height: 80px;
-            }
-            
-            .ring-1 { width: 130px; height: 130px; }
-            .ring-2 { width: 160px; height: 160px; }
-            .ring-3 { width: 200px; height: 200px; }
-            
-            .price-display {
-                font-size: 2.8rem;
-                padding: 15px 30px;
-            }
-            
-            .contact-email {
-                font-size: 1.2rem;
-                padding: 12px 20px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .logo-text {
-                font-size: 1.5rem;
-            }
-            
-            .domain-badge {
-                font-size: 0.8rem;
-                padding: 6px 10px;
-            }
-            
-            .details-section,
-            .pricing-section,
-            .contact-section {
-                padding: 25px 20px;
-            }
+            h1 { flex-direction: column; font-size: 3.5rem; }
+            .word-ext { margin-top: -10px; }
+            .quote-secondary { font-size: 1rem; white-space: normal; animation: none; border: none;}
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-atom" style="font-size: 24px; color: white; z-index: 2;"></i>
-                </div>
-                <div>
-                    <div class="logo-text">QUARKWATT.COM</div>
-                    <div class="logo-subtitle">Quark + Watt | 9 Characters</div>
-                </div>
+
+    <div class="quantum-bg"></div>
+
+    <header>
+        <h1>
+            <span class="word-quark">QUARK</span>
+            <span class="word-watt">WATT</span>
+            <span class="word-ext">.COM</span>
+        </h1>
+
+        <div class="musk-quote-container">
+            <div class="quote-primary">"Exawatts or you’re not really trying"</div>
+            <div class="quote-secondary">"Energy is the real currency"</div>
+        </div>
+
+        <div class="price-box">
+            <div class="price">$3,690 USD</div>
+            <div class="installments">10-Month Payment Plan Available</div>
+        </div>
+
+        <div class="btn-group">
+            <button onclick="buyNow()" class="btn btn-buy">Acquire Energy</button>
+            <button onclick="copyEmail()" class="btn btn-contact">Contact Seller</button>
+        </div>
+    </header>
+
+    <section class="grid-section">
+        <h2 class="section-header">12 Vectors of Future Power</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Exascale Computing</h3>
+                <p>The infrastructure required to power ASI (Artificial Super Intelligence). AI eats Watts.</p>
             </div>
-            <div class="domain-badge">
-                <i class="fas fa-bolt"></i> PREMIUM DOMAIN FOR SALE
+            <div class="card">
+                <h3>2. Quantum Energy Storage</h3>
+                <p>Batteries at the subatomic level. QuarkWatt represents the theoretical limit of energy density.</p>
             </div>
-        </header>
-        
-        <main>
-            <section class="hero">
-                <h1>Premium Energy & Technology Domain For Sale</h1>
-                <p><span class="highlight">QuarkWatt.com</span> combines cutting-edge physics with energy innovation. Perfect for companies in <span class="highlight">nuclear fusion</span>, <span class="highlight">space energy</span>, <span class="highlight">quantum technology</span>, and <span class="highlight">clean energy solutions</span>.</p>
-                
-                <div class="fusion-container">
-                    <div class="fusion-core"></div>
-                    <div class="fusion-ring ring-1"></div>
-                    <div class="fusion-ring ring-2"></div>
-                    <div class="fusion-ring ring-3"></div>
-                    <div class="particle" style="top: 30%; left: 20%; animation-delay: 0s;"></div>
-                    <div class="particle" style="top: 60%; left: 80%; animation-delay: 0.5s;"></div>
-                    <div class="particle" style="top: 80%; left: 40%; animation-delay: 1s;"></div>
-                    <div class="particle" style="top: 20%; left: 60%; animation-delay: 1.5s;"></div>
-                </div>
-            </section>
-            
-            <section class="details-section">
-                <h2 class="details-title">Why QuarkWatt.com is a Valuable Domain</h2>
-                
-                <div class="details-grid">
-                    <div class="detail-card">
-                        <div class="detail-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="detail-title">Future-Proof Name</div>
-                        <div class="detail-text">"Quark" (fundamental particle) + "Watt" (unit of power) creates a perfect blend of cutting-edge science and energy technology.</div>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <div class="detail-icon">
-                            <i class="fas fa-industry"></i>
-                        </div>
-                        <div class="detail-title">Multiple Applications</div>
-                        <div class="detail-text">Ideal for nuclear fusion startups, space energy companies, quantum computing firms, and next-generation power solutions.</div>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <div class="detail-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="detail-title">Investment Potential</div>
-                        <div class="detail-text">As space and fusion energy markets grow, this domain's value will increase substantially. 9-character .com domains are rare.</div>
-                    </div>
-                    
-                    <div class="detail-card">
-                        <div class="detail-icon">
-                            <i class="fas fa-memory"></i>
-                        </div>
-                        <div class="detail-title">Memorable & Brandable</div>
-                        <div class="detail-text">Easy to remember, pronounce, and spell. Strong visual and conceptual appeal for technology brands.</div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="pricing-section">
-                <h2 class="pricing-title">Domain Price</h2>
-                <div class="price-display">$18,500</div>
-                <div class="price-note">Negotiable for serious buyers | Payment plans available</div>
-                <div class="offer-badge">
-                    <i class="fas fa-gem"></i> BELOW MARKET VALUE FOR QUICK SALE
-                </div>
-                
-                <div style="margin-top: 30px; color: #b8d4ff; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    <p>This is a premium 9-character .com domain in the high-demand energy/tech sector. Comparable domains sell for $25,000+.</p>
-                </div>
-            </section>
-            
-            <section class="contact-section">
-                <h2 class="contact-title">Own This Premium Domain Today</h2>
-                <p style="font-size: 1.2rem; color: #b8d4ff; max-width: 700px; margin: 0 auto 20px;">
-                    Contact me to purchase QuarkWatt.com or make an offer. Serious inquiries only.
-                </p>
-                
-                <a href="mailto:joshua369x@gmail.com" class="contact-email">
-                    <i class="fas fa-envelope"></i>
-                    joshua369x@gmail.com
-                </a>
-                
-                <p style="margin-top: 20px; color: #8bb9fe; font-size: 1rem;">
-                    Include your offer or inquiry. I respond within 24 hours.
-                </p>
-                
-                <div class="urgency-note">
-                    <i class="fas fa-exclamation-circle"></i> Domain transfer will be facilitated through Escrow.com for security
-                </div>
-            </section>
-        </main>
-        
-        <footer>
-            <div class="footer-logo">QUARKWATT.COM</div>
-            <p>Premium Domain for Energy & Technology Companies</p>
-            <p style="margin-top: 20px;">&copy; 2023 QuarkWatt.com Domain Sale. All rights reserved.</p>
-            <p style="margin-top: 10px; font-size: 0.8rem;">Domain sale conducted by owner</p>
-        </footer>
-    </div>
+            <div class="card">
+                <h3>3. Fusion Power</h3>
+                <p>The holy grail. Generating energy by fusing atomic nuclei—the ultimate Quark-Watt conversion.</p>
+            </div>
+            <div class="card">
+                <h3>4. Crypto Mining Grid</h3>
+                <p>If Energy is Currency, Bitcoin is the bank. A domain for sustainable, high-output mining.</p>
+            </div>
+            <div class="card">
+                <h3>5. Neutrino Harvesting</h3>
+                <p>Theoretical technology to harvest energy from the ghost particles passing through the earth.</p>
+            </div>
+            <div class="card">
+                <h3>6. AI Data Centers</h3>
+                <p>Branding for the massive energy parks required to train models like Grok, GPT-6, and beyond.</p>
+            </div>
+            <div class="card">
+                <h3>7. Superconductivity</h3>
+                <p>Zero-resistance transmission. Moving Watts without losing a single Quark of energy.</p>
+            </div>
+            <div class="card">
+                <h3>8. Space Propulsion</h3>
+                <p>Quark-gluon plasma drives and antimatter propulsion for interstellar travel.</p>
+            </div>
+            <div class="card">
+                <h3>9. The Exawatt Grid</h3>
+                <p>Managing the global power grid when humanity's consumption passes the Exawatt threshold.</p>
+            </div>
+            <div class="card">
+                <h3>10. Zero-Point Energy</h3>
+                <p>Vacuum energy research. Extracting power from the fabric of space-time itself.</p>
+            </div>
+            <div class="card">
+                <h3>11. Nanotech Power</h3>
+                <p>powering microscopic bots (medical/industrial) with high-efficiency nanoscale reactors.</p>
+            </div>
+            <div class="card">
+                <h3>12. Dyson Swarm Tech</h3>
+                <p>The ultimate goal: Harvesting the total Wattage output of a star.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 QuarkWatt.com. Powering the Future.</p>
+        <p>Immediate transfer available via Spaceship.</p>
+    </footer>
+
+    <div id="toast">Email Copied: joshua369x@gmail.com</div>
 
     <script>
-        // Add dynamic particles
-        document.addEventListener('DOMContentLoaded', function() {
-            const fusionContainer = document.querySelector('.fusion-container');
-            
-            // Create more particles
-            for(let i = 0; i < 6; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                // Random position
-                const top = Math.random() * 100;
-                const left = Math.random() * 100;
-                const size = Math.random() * 5 + 3;
-                const delay = Math.random() * 3;
-                
-                particle.style.top = `${top}%`;
-                particle.style.left = `${left}%`;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                particle.style.animationDelay = `${delay}s`;
-                
-                // Random color
-                const colors = ['#00a8ff', '#9d4edd', '#ff2a6d', '#5ce1e6', '#ffd166'];
-                const color = colors[Math.floor(Math.random() * colors.length)];
-                particle.style.background = color;
-                
-                fusionContainer.appendChild(particle);
-            }
-            
-            // Add twinkling stars to background
-            const body = document.body;
-            for(let i = 0; i < 25; i++) {
-                const star = document.createElement('div');
-                star.style.position = 'absolute';
-                star.style.width = Math.random() * 2 + 1 + 'px';
-                star.style.height = star.style.width;
-                star.style.background = '#ffffff';
-                star.style.borderRadius = '50%';
-                star.style.left = Math.random() * 100 + 'vw';
-                star.style.top = Math.random() * 100 + 'vh';
-                star.style.opacity = Math.random() * 0.7 + 0.3;
-                star.style.zIndex = '-1';
-                
-                // Twinkling animation
-                star.style.animation = `twinkle ${Math.random() * 3 + 2}s infinite alternate`;
-                
-                body.appendChild(star);
-            }
-            
-            // Add twinkling animation
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes twinkle {
-                    0% { opacity: 0.2; }
-                    100% { opacity: 0.9; }
-                }
-            `;
-            document.head.appendChild(style);
-            
-            // Add price animation
-            const priceElement = document.querySelector('.price-display');
-            let originalPrice = '$18,500';
-            let alternatePrice = '$18,499';
-            
-            setInterval(() => {
-                if (priceElement.textContent === originalPrice) {
-                    priceElement.textContent = alternatePrice;
-                    priceElement.style.color = '#ff8a8a';
-                } else {
-                    priceElement.textContent = originalPrice;
-                    priceElement.style.color = '#ffd166';
-                }
-            }, 3000);
-        });
+        function buyNow() {
+            window.open('https://www.spaceship.com/s/buy/quarkwatt.com/II0AkbsdOiKMK4IZ', '_blank');
+        }
+
+        function copyEmail() {
+            const email = "joshua369x@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                const toast = document.getElementById("toast");
+                toast.className = "show";
+                setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+            }).catch(err => {
+                console.error("Failed to copy", err);
+            });
+        }
     </script>
 </body>
 </html>
