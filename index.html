@@ -2,50 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuarkWatt.com | The Fundamental Unit of Future Energy</title>
-    <meta name="description" content="Premium Domain For Sale: QuarkWatt.com. Where Quantum Physics meets Exascale Energy. 'Energy is the real currency.' Price: $3,690.">
-    <meta name="keywords" content="QuarkWatt, Exawatts, Energy Currency, Quantum Energy, Fusion Power, AI Data Centers, Crypto Mining, Musk Energy, Domain For Sale">
-    <meta name="author" content="Joshua">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="QuarkWatt.com - Exawatts or Nothing">
-    <meta property="og:description" content="The intersection of Subatomic Physics and Massive Energy. Own the future of power. Price: $3,690.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://quarkwatt.com">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "QuarkWatt.com Domain Name",
-      "description": "Premium domain name QuarkWatt.com, representing the fusion of quantum mechanics and high-output energy systems.",
-      "sku": "QUARK-WATT-DOM",
-      "offers": {
-        "@type": "Offer",
-        "url": "https://www.spaceship.com/s/buy/quarkwatt.com/II0AkbsdOiKMK4IZ",
-        "priceCurrency": "USD",
-        "price": "3690.00",
-        "priceValidUntil": "2030-01-01",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QUARKWATT.COM | The Future of Quantum Energy & Exascale Power</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="QuarkWatt.com: The defining domain for the Quantum Energy revolution. Perfect for Fusion Tech, AI Power Infrastructure, and Exascale Computing.">
+    <meta name="keywords" content="QuarkWatt, Quantum Energy, Fusion Power, Exawatts, AI Infrastructure, Premium Domain, Energy Grid, Future Tech">
+    <meta name="author" content="QuarkWatt.com Seller">
+    <meta property="og:title" content="QUARKWATT.COM - Energy is the Real Currency">
+    <meta property="og:description" content="Exawatts or you’re not really trying. Secure the domain for the next energy revolution.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <style>
         :root {
-            --quark-purple: #bc13fe;
-            --watt-yellow: #fff700;
-            --electric-blue: #00f3ff;
-            --bg-color: #050508;
-            --card-bg: rgba(20, 20, 25, 0.8);
+            --quark-cyan: #00f3ff;
+            --watt-yellow: #ffdd00;
+            --energy-orange: #ff9d00;
+            --deep-void: #020205;
+            --glass-bg: rgba(10, 10, 15, 0.8);
+            --glass-border: rgba(0, 243, 255, 0.2);
         }
 
         * {
@@ -55,422 +35,639 @@
         }
 
         body {
-            background-color: var(--bg-color);
+            background-color: var(--deep-void);
             color: #fff;
             font-family: 'Rajdhani', sans-serif;
             overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Quantum Field Background */
-        .quantum-bg {
+        /* --- DESKTOP ONLY: Custom Cursor --- */
+        @media (pointer: fine) {
+            * { cursor: none; }
+            #cursor {
+                display: block;
+                width: 20px;
+                height: 20px;
+                border: 2px solid var(--watt-yellow);
+                border-radius: 50%;
+                position: fixed;
+                pointer-events: none;
+                z-index: 9999;
+                transition: transform 0.05s linear;
+                box-shadow: 0 0 15px var(--watt-yellow);
+                mix-blend-mode: difference;
+            }
+        }
+
+        /* --- MOBILE OPTIMIZATION --- */
+        @media (pointer: coarse) {
+            #cursor { display: none !important; }
+            * { cursor: auto; }
+        }
+
+        /* Background Canvas */
+        #canvas-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: 
-                radial-gradient(circle at 50% 50%, rgba(188, 19, 254, 0.05) 0%, transparent 50%),
-                linear-gradient(0deg, transparent 24%, rgba(0, 243, 255, .03) 25%, rgba(0, 243, 255, .03) 26%, transparent 27%, transparent 74%, rgba(0, 243, 255, .03) 75%, rgba(0, 243, 255, .03) 76%, transparent 77%, transparent),
-                linear-gradient(90deg, transparent 24%, rgba(0, 243, 255, .03) 25%, rgba(0, 243, 255, .03) 26%, transparent 27%, transparent 74%, rgba(0, 243, 255, .03) 75%, rgba(0, 243, 255, .03) 76%, transparent 77%, transparent);
-            background-size: 100% 100%, 50px 50px, 50px 50px;
-            animation: bgShift 100s linear infinite;
+            opacity: 1;
         }
 
-        @keyframes bgShift {
-            0% { background-position: 0 0; }
-            100% { background-position: 50px 50px; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
         }
 
-        /* Hero Section */
+        /* Header */
         header {
-            min-height: 90vh;
+            min-height: 100dvh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 2rem;
         }
 
-        h1 {
-            font-size: clamp(3rem, 10vw, 8rem);
-            margin-bottom: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: baseline;
-            line-height: 1.1;
+        .quote-container {
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 2s 0.5s forwards;
+            padding: 0 20px;
         }
 
-        /* 1. QUARK - Subatomic Glitch */
-        .word-quark {
-            font-family: 'Audiowide', cursive;
-            color: var(--quark-purple);
-            text-shadow: 2px 2px 0px #00f3ff;
-            animation: glitch 3s infinite alternate-reverse;
-            margin-right: 5px;
-        }
-
-        /* 2. WATT - High Voltage */
-        .word-watt {
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 900;
-            color: var(--watt-yellow);
-            text-shadow: 0 0 20px var(--watt-yellow), 0 0 40px #ffaa00;
-            animation: voltagePulse 0.2s infinite alternate;
-        }
-
-        /* 3. .COM - Digital */
-        .word-ext {
-            font-size: 0.3em;
-            color: #888;
-            font-family: 'Rajdhani', sans-serif;
-            animation: fadeBlink 2s infinite;
-        }
-
-        /* MUSK QUOTES - Dynamic Display */
-        .musk-quote-container {
-            margin: 30px 0;
-            padding: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            background: rgba(0,0,0,0.5);
-        }
-
-        .quote-primary {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(1.2rem, 4vw, 2.5rem);
-            background: linear-gradient(90deg, #fff, var(--electric-blue), #fff);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 3s linear infinite;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .quote-secondary {
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 1.5rem;
-            color: var(--watt-yellow);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            animation: typeWriter 4s steps(40) infinite alternate;
-            border-right: 3px solid var(--quark-purple);
-            overflow: hidden;
-            white-space: nowrap;
-            display: inline-block;
-            max-width: 100%;
-        }
-
-        /* Price */
-        .price-box {
-            margin: 30px 0;
-        }
-
-        .price {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 0 15px rgba(255,255,255,0.5);
-        }
-
-        .installments {
-            display: inline-block;
-            background: linear-gradient(90deg, var(--quark-purple), var(--electric-blue));
-            color: #fff;
-            padding: 5px 20px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 1rem;
-            margin-top: 10px;
-            box-shadow: 0 0 15px rgba(188, 19, 254, 0.5);
-        }
-
-        /* Buttons */
-        .btn-group {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .btn {
-            padding: 20px 50px;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-            border: none;
-            clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
-        }
-
-        .btn-buy {
-            background-color: var(--watt-yellow);
-            color: #000;
-        }
-
-        .btn-buy:hover {
-            background-color: #fff;
-            box-shadow: 0 0 30px var(--watt-yellow);
-            transform: scale(1.05);
-        }
-
-        .btn-contact {
-            background: transparent;
-            border: 2px solid var(--electric-blue);
-            color: var(--electric-blue);
-        }
-
-        .btn-contact:hover {
-            background: var(--electric-blue);
-            color: #000;
-            box-shadow: 0 0 30px var(--electric-blue);
-        }
-
-        /* Grid Section */
-        .grid-section {
-            padding: 4rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            color: #fff;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid #333;
-            padding: 2rem;
-            transition: 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--quark-purple);
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--watt-yellow);
-            box-shadow: 0 0 20px rgba(188, 19, 254, 0.2);
-        }
-
-        .card h3 {
-            color: var(--electric-blue);
-            margin-bottom: 10px;
-            font-family: 'Orbitron', sans-serif;
+        .musk-quote {
+            font-family: 'Share Tech Mono', monospace;
             font-size: 1.1rem;
+            color: var(--watt-yellow);
+            background: rgba(0,0,0,0.8);
+            padding: 15px 25px;
+            border-left: 3px solid var(--watt-yellow);
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-transform: uppercase;
         }
 
-        .card p {
-            color: #aaa;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 3rem;
-            border-top: 1px solid #222;
-            color: #555;
-        }
-
-        /* Toast */
-        #toast {
-            visibility: hidden;
-            min-width: 250px;
-            background-color: var(--watt-yellow);
-            color: #000;
-            text-align: center;
-            padding: 16px;
-            position: fixed;
-            z-index: 1000;
-            left: 50%;
-            bottom: 30px;
-            transform: translateX(-50%);
-            font-weight: bold;
+        .main-title {
             font-family: 'Orbitron', sans-serif;
+            font-size: 5.5rem;
+            font-weight: 900;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.8);
         }
 
-        #toast.show {
-            visibility: visible;
-            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        /* ANIMATION: QUARK (Sub-atomic Jitter) */
+        .title-quark {
+            color: var(--quark-cyan);
+            position: relative;
+            animation: jitter 3s infinite;
         }
 
-        /* Animations */
-        @keyframes glitch {
-            0% { transform: skew(0deg); }
-            20% { transform: skew(-10deg); filter: hue-rotate(90deg); }
-            40% { transform: skew(10deg); }
+        /* ANIMATION: WATT (High Voltage Pulse) */
+        .title-watt {
+            color: var(--watt-yellow);
+            text-shadow: 0 0 20px var(--watt-yellow);
+            animation: voltage-surge 0.2s infinite alternate;
+        }
+
+        /* ANIMATION: .COM (Digital Anchor) */
+        .title-com {
+            color: #fff;
+            font-size: 3rem;
+            opacity: 0.7;
+            letter-spacing: 2px;
+        }
+
+        @keyframes jitter {
+            0% { transform: skew(0deg); filter: blur(0px); }
+            5% { transform: skew(2deg); filter: blur(1px); }
+            10% { transform: skew(-2deg); filter: blur(0px); }
+            15% { transform: skew(0deg); }
             100% { transform: skew(0deg); }
         }
 
-        @keyframes voltagePulse {
-            0% { opacity: 0.8; }
-            100% { opacity: 1; text-shadow: 0 0 30px var(--watt-yellow); }
+        @keyframes voltage-surge {
+            0% { text-shadow: 0 0 10px var(--watt-yellow); opacity: 0.9; }
+            100% { text-shadow: 0 0 30px var(--energy-orange), 0 0 60px var(--watt-yellow); opacity: 1; }
         }
 
-        @keyframes shine {
-            to { background-position: 200% center; }
+        /* Vision Section */
+        .vision-section {
+            text-align: center;
+            margin: 6rem 0;
+            padding: 3rem;
+            background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255, 221, 0, 0.05) 100%);
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+            backdrop-filter: blur(8px);
         }
 
-        @keyframes typeWriter {
-            from { width: 0; }
-            to { width: 100%; }
+        .vision-quote {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #fff;
+            max-width: 900px;
+            margin: 0 auto;
+            font-family: 'Orbitron';
+        }
+
+        .highlight { color: var(--quark-cyan); text-shadow: 0 0 10px var(--quark-cyan); }
+
+        /* Grid */
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-bottom: 8rem;
+        }
+
+        .grid-item {
+            background: rgba(5, 5, 8, 0.85);
+            border: 1px solid rgba(255, 221, 0, 0.15);
+            padding: 30px 20px;
+            border-radius: 4px; /* Techy corners */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .grid-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 0%; height: 2px;
+            background: var(--watt-yellow);
+            transition: width 0.3s;
+        }
+
+        @media (hover: hover) {
+            .grid-item:hover {
+                transform: translateY(-5px);
+                border-color: var(--quark-cyan);
+                box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+            }
+            .grid-item:hover::before { width: 100%; }
+        }
+
+        .grid-title {
+            font-family: 'Orbitron';
+            font-size: 1.1rem;
+            color: #fff;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .grid-desc { font-size: 0.9rem; color: #99a; line-height: 1.4; }
+
+        /* Icons */
+        .icon-svg {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            display: block;
+            stroke: var(--quark-cyan);
+            stroke-width: 2;
+            fill: none;
+            filter: drop-shadow(0 0 5px rgba(0,243,255,0.4));
+        }
+
+        .anim-spin { animation: spin 4s linear infinite; transform-origin: center; }
+        .anim-pulse { animation: pulse-opacity 1s steps(5, end) infinite; }
+        .anim-dash { stroke-dasharray: 100; stroke-dashoffset: 100; animation: dash 3s linear infinite; }
+        
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        @keyframes pulse-opacity { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+        @keyframes dash { to { stroke-dashoffset: 0; } }
+
+        /* Pricing */
+        .pricing-section { text-align: center; margin-bottom: 8rem; }
+
+        .price-card {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(10,10,10,0.95), rgba(20,20,20,0.98));
+            padding: 5rem 3rem;
+            border: 1px solid var(--watt-yellow);
+            border-radius: 0; /* Square/Tech look */
+            box-shadow: 0 0 60px rgba(255, 221, 0, 0.15);
+            position: relative;
+            max-width: 90%;
+            clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+        }
+
+        .price-tag {
+            font-family: 'Orbitron';
+            font-size: 4.5rem;
+            color: var(--watt-yellow);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(255, 221, 0, 0.4);
+        }
+
+        /* Buttons */
+        .btn {
+            font-family: 'Orbitron';
+            font-size: 1.1rem;
+            padding: 18px 45px;
+            border: none;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 15px;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .btn-buy {
+            background: var(--watt-yellow);
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 221, 0, 0.4);
         }
         
-        @keyframes fadeBlink {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
+        .btn-buy:hover { background: #fff; box-shadow: 0 0 40px #fff; }
+
+        .btn-contact {
+            background: transparent;
+            color: var(--quark-cyan);
+            border: 1px solid var(--quark-cyan);
         }
 
-        @keyframes fadein {
-            from { bottom: 0; opacity: 0; }
-            to { bottom: 30px; opacity: 1; }
+        .btn-contact:active { background: var(--quark-cyan); color: #000; }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #555;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #222;
+            margin: 0 auto;
         }
 
-        @keyframes fadeout {
-            from { bottom: 30px; opacity: 1; }
-            to { bottom: 0; opacity: 0; }
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            h1 { flex-direction: column; font-size: 3.5rem; }
-            .word-ext { margin-top: -10px; }
-            .quote-secondary { font-size: 1rem; white-space: normal; animation: none; border: none;}
+            .main-title { font-size: 2.8rem; }
+            .grid-section { grid-template-columns: 1fr; padding: 0 10px; }
+            .price-card { padding: 3rem 1.5rem; }
+            .price-tag { font-size: 3rem; }
+            .vision-quote { font-size: 1.5rem; }
         }
+
+        @keyframes fadeIn { to { opacity: 1; } }
     </style>
 </head>
 <body>
 
-    <div class="quantum-bg"></div>
+    <!-- Cursor (Desktop Only) -->
+    <div id="cursor"></div>
+    
+    <!-- 3D Background -->
+    <div id="canvas-container"></div>
 
-    <header>
-        <h1>
-            <span class="word-quark">QUARK</span>
-            <span class="word-watt">WATT</span>
-            <span class="word-ext">.COM</span>
-        </h1>
+    <div class="container">
+        <header>
+            <div class="quote-container">
+                <div class="musk-quote">
+                    "Exawatts or you’re not really trying."
+                </div>
+            </div>
 
-        <div class="musk-quote-container">
-            <div class="quote-primary">"Exawatts or you’re not really trying"</div>
-            <div class="quote-secondary">"Energy is the real currency"</div>
-        </div>
+            <div class="main-title">
+                <span class="title-quark">QUARK</span>
+                <span class="title-watt">WATT</span>
+                <span class="title-com">.COM</span>
+            </div>
 
-        <div class="price-box">
-            <div class="price">$3,690 USD</div>
-            <div class="installments">10-Month Payment Plan Available</div>
-        </div>
+            <p style="font-family:'Share Tech Mono'; color: #888; letter-spacing: 3px; margin-top: 1rem; text-transform: uppercase;">
+                The Fundamental Particle of Power
+            </p>
+        </header>
 
-        <div class="btn-group">
-            <button onclick="buyNow()" class="btn btn-buy">Acquire Energy</button>
-            <button onclick="copyEmail()" class="btn btn-contact">Contact Seller</button>
-        </div>
-    </header>
+        <section class="vision-section">
+            <p class="vision-quote">
+                "Energy is the <span class="highlight">real currency</span>."
+            </p>
+        </section>
 
-    <section class="grid-section">
-        <h2 class="section-header">12 Vectors of Future Power</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>1. Exascale Computing</h3>
-                <p>The infrastructure required to power ASI (Artificial Super Intelligence). AI eats Watts.</p>
+        <!-- Grid Section: Quark + Watt (Physics & Energy) -->
+        <section class="grid-section">
+            
+            <!-- 1. Quantum Energy -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="10" fill="var(--watt-yellow)" class="anim-pulse"/>
+                    <ellipse cx="50" cy="50" rx="40" ry="10" stroke="var(--quark-cyan)" fill="none" class="anim-spin"/>
+                    <ellipse cx="50" cy="50" rx="10" ry="40" stroke="var(--quark-cyan)" fill="none" class="anim-spin" style="animation-duration: 3s;"/>
+                </svg>
+                <h3 class="grid-title">Quantum Grids</h3>
+                <p class="grid-desc">Managing energy distribution at the sub-atomic level.</p>
             </div>
-            <div class="card">
-                <h3>2. Quantum Energy Storage</h3>
-                <p>Batteries at the subatomic level. QuarkWatt represents the theoretical limit of energy density.</p>
-            </div>
-            <div class="card">
-                <h3>3. Fusion Power</h3>
-                <p>The holy grail. Generating energy by fusing atomic nuclei—the ultimate Quark-Watt conversion.</p>
-            </div>
-            <div class="card">
-                <h3>4. Crypto Mining Grid</h3>
-                <p>If Energy is Currency, Bitcoin is the bank. A domain for sustainable, high-output mining.</p>
-            </div>
-            <div class="card">
-                <h3>5. Neutrino Harvesting</h3>
-                <p>Theoretical technology to harvest energy from the ghost particles passing through the earth.</p>
-            </div>
-            <div class="card">
-                <h3>6. AI Data Centers</h3>
-                <p>Branding for the massive energy parks required to train models like Grok, GPT-6, and beyond.</p>
-            </div>
-            <div class="card">
-                <h3>7. Superconductivity</h3>
-                <p>Zero-resistance transmission. Moving Watts without losing a single Quark of energy.</p>
-            </div>
-            <div class="card">
-                <h3>8. Space Propulsion</h3>
-                <p>Quark-gluon plasma drives and antimatter propulsion for interstellar travel.</p>
-            </div>
-            <div class="card">
-                <h3>9. The Exawatt Grid</h3>
-                <p>Managing the global power grid when humanity's consumption passes the Exawatt threshold.</p>
-            </div>
-            <div class="card">
-                <h3>10. Zero-Point Energy</h3>
-                <p>Vacuum energy research. Extracting power from the fabric of space-time itself.</p>
-            </div>
-            <div class="card">
-                <h3>11. Nanotech Power</h3>
-                <p>powering microscopic bots (medical/industrial) with high-efficiency nanoscale reactors.</p>
-            </div>
-            <div class="card">
-                <h3>12. Dyson Swarm Tech</h3>
-                <p>The ultimate goal: Harvesting the total Wattage output of a star.</p>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 QuarkWatt.com. Powering the Future.</p>
-        <p>Immediate transfer available via Spaceship.</p>
-    </footer>
+            <!-- 2. Fusion Power -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="25" stroke="var(--watt-yellow)" stroke-width="2" stroke-dasharray="10,5" class="anim-spin" fill="none"/>
+                    <circle cx="50" cy="50" r="15" fill="var(--energy-orange)" opacity="0.8" class="anim-pulse"/>
+                </svg>
+                <h3 class="grid-title">Inertial Fusion</h3>
+                <p class="grid-desc">Commercializing net-positive fusion reactors.</p>
+            </div>
 
-    <div id="toast">Email Copied: joshua369x@gmail.com</div>
+            <!-- 3. Exascale Computing -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <rect x="20" y="20" width="60" height="60" stroke="var(--quark-cyan)" fill="none" />
+                    <line x1="20" y1="50" x2="80" y2="50" stroke="var(--quark-cyan)" class="anim-dash"/>
+                    <line x1="50" y1="20" x2="50" y2="80" stroke="var(--quark-cyan)" class="anim-dash"/>
+                    <rect x="40" y="40" width="20" height="20" fill="var(--watt-yellow)"/>
+                </svg>
+                <h3 class="grid-title">Exascale Compute</h3>
+                <p class="grid-desc">Powering the AI clusters that consume terawatts.</p>
+            </div>
 
+            <!-- 4. Superconductivity -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <path d="M10 50 Q 30 20 50 50 T 90 50" fill="none" stroke="var(--quark-cyan)" stroke-width="3" class="anim-dash"/>
+                    <path d="M10 50 Q 30 80 50 50 T 90 50" fill="none" stroke="var(--quark-cyan)" stroke-width="3" class="anim-dash" style="animation-delay: 0.5s"/>
+                </svg>
+                <h3 class="grid-title">Superconductors</h3>
+                <p class="grid-desc">Lossless energy transmission across continents.</p>
+            </div>
+
+            <!-- 5. Neutrino Harvesting -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="20" cy="20" r="2" fill="#fff"/>
+                    <circle cx="80" cy="80" r="2" fill="#fff"/>
+                    <circle cx="80" cy="20" r="2" fill="#fff"/>
+                    <circle cx="20" cy="80" r="2" fill="#fff"/>
+                    <line x1="0" y1="0" x2="100" y2="100" stroke="var(--quark-cyan)" stroke-dasharray="5,15" class="anim-dash"/>
+                </svg>
+                <h3 class="grid-title">Neutrino Energy</h3>
+                <p class="grid-desc">Harvesting power from cosmic particle radiation.</p>
+            </div>
+
+            <!-- 6. Photonic Processors -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="var(--watt-yellow)" stroke-width="1"/>
+                    <path d="M50 20 L50 80" stroke="var(--quark-cyan)" stroke-width="2"/>
+                    <path d="M20 50 L80 50" stroke="var(--quark-cyan)" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="5" fill="#fff" class="anim-pulse"/>
+                </svg>
+                <h3 class="grid-title">Photonic AI</h3>
+                <p class="grid-desc">Light-speed data processing with minimal heat.</p>
+            </div>
+
+            <!-- 7. Solid State Batteries -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <rect x="25" y="20" width="50" height="60" rx="5" stroke="var(--quark-cyan)" fill="none"/>
+                    <rect x="35" y="10" width="30" height="10" fill="var(--quark-cyan)"/>
+                    <rect x="30" y="50" width="40" height="25" fill="var(--watt-yellow)" class="anim-pulse"/>
+                </svg>
+                <h3 class="grid-title">Solid State Power</h3>
+                <p class="grid-desc">Ultra-density energy storage for robotics.</p>
+            </div>
+
+            <!-- 8. Antimatter Propulsion -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="var(--energy-orange)" stroke-width="2" stroke-dasharray="2,5"/>
+                    <circle cx="50" cy="50" r="5" fill="#fff"/>
+                    <path d="M50 50 L90 10" stroke="var(--energy-orange)" stroke-width="2"/>
+                    <path d="M50 50 L10 90" stroke="var(--energy-orange)" stroke-width="2"/>
+                </svg>
+                <h3 class="grid-title">Antimatter Drive</h3>
+                <p class="grid-desc">The ultimate energy density for interstellar travel.</p>
+            </div>
+
+            <!-- 9. Zero-Point Energy -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" stroke="var(--quark-cyan)" fill="none" opacity="0.3"/>
+                    <path d="M50 5 L50 95" stroke="var(--quark-cyan)" opacity="0.5"/>
+                    <path d="M5 50 L95 50" stroke="var(--quark-cyan)" opacity="0.5"/>
+                    <rect x="35" y="35" width="30" height="30" fill="none" stroke="var(--watt-yellow)" class="anim-spin"/>
+                </svg>
+                <h3 class="grid-title">Vacuum Energy</h3>
+                <p class="grid-desc">Extracting Watts from the fabric of space-time.</p>
+            </div>
+
+            <!-- 10. AI Grid Management -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <path d="M10 90 L30 50 L50 80 L70 30 L90 50" fill="none" stroke="var(--watt-yellow)" stroke-width="2" class="anim-dash"/>
+                    <circle cx="70" cy="30" r="3" fill="var(--quark-cyan)"/>
+                </svg>
+                <h3 class="grid-title">Neural Grids</h3>
+                <p class="grid-desc">AI optimizing global consumption in real-time.</p>
+            </div>
+
+            <!-- 11. Isotope Generators -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <path d="M50 10 L80 80 L20 80 Z" stroke="var(--energy-orange)" stroke-width="3" fill="none"/>
+                    <circle cx="50" cy="55" r="10" fill="var(--watt-yellow)" class="anim-pulse"/>
+                </svg>
+                <h3 class="grid-title">Isotope Decay</h3>
+                <p class="grid-desc">Century-long power sources for deep space sensors.</p>
+            </div>
+
+            <!-- 12. Dyson Swarm -->
+            <div class="grid-item">
+                <svg class="icon-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="15" fill="var(--watt-yellow)" />
+                    <circle cx="50" cy="50" r="35" stroke="var(--quark-cyan)" stroke-dasharray="4,8" class="anim-spin" fill="none"/>
+                    <circle cx="50" cy="50" r="45" stroke="var(--quark-cyan)" stroke-dasharray="2,10" class="anim-spin" style="animation-direction: reverse;" fill="none"/>
+                </svg>
+                <h3 class="grid-title">Dyson Swarm</h3>
+                <p class="grid-desc">Capturing the total energy output of a star.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="price-card">
+                <h2 style="color:#888; font-family:'Share Tech Mono'; margin-bottom:1rem; letter-spacing: 2px;">ENERGY VALUATION</h2>
+                <div class="price-tag">$3,690</div>
+                <div style="margin-bottom: 2.5rem;">
+                    <span style="border: 1px solid var(--quark-cyan); padding: 8px 15px; background: rgba(0,243,255,0.1); color: var(--quark-cyan); font-family: 'Share Tech Mono';">
+                        10 Monthly Installments Available
+                    </span>
+                </div>
+                
+                <a href="https://www.spaceship.com/s/buy/quarkwatt.com/II0AkbsdOiKMK4IZ" target="_blank" class="btn btn-buy">
+                    Initialize Transfer
+                </a>
+                
+                <br><br>
+                
+                <button onclick="copyEmail()" class="btn btn-contact" id="contactBtn">
+                    Contact Broker
+                </button>
+            </div>
+        </section>
+
+        <footer class="disclaimer">
+            <p>DISCLAIMER: QuarkWatt.com is a premium domain asset available for acquisition. This site serves as a conceptual demonstration for Quantum Energy, Physics, and AI applications. Not affiliated with any specific energy corporation or research lab. Quotes are for thematic context only.</p>
+            <p style="margin-top:15px; color: #333;">&copy; 2026 QuarkWatt.com Rights Holder.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
     <script>
-        function buyNow() {
-            window.open('https://www.spaceship.com/s/buy/quarkwatt.com/II0AkbsdOiKMK4IZ', '_blank');
-        }
-
+        // Copy Email Logic
         function copyEmail() {
             const email = "joshua369x@gmail.com";
             navigator.clipboard.writeText(email).then(() => {
-                const toast = document.getElementById("toast");
-                toast.className = "show";
-                setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+                const btn = document.getElementById('contactBtn');
+                const originalText = btn.innerText;
+                btn.innerText = "COPIED TO CLIPBOARD";
+                btn.style.background = "var(--quark-cyan)";
+                btn.style.color = "#000";
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.background = "transparent";
+                    btn.style.color = "var(--quark-cyan)";
+                }, 3000);
             }).catch(err => {
-                console.error("Failed to copy", err);
+                console.error('Failed to copy', err);
             });
         }
+
+        // Custom Cursor Logic (Desktop)
+        const cursor = document.getElementById('cursor');
+        if (window.matchMedia("(pointer: fine)").matches) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+        }
+
+        // Three.js Background (Optimized Sphere & Satellites)
+        const initThreeJS = () => {
+            const container = document.getElementById('canvas-container');
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 16;
+            camera.position.y = 2;
+
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            container.appendChild(renderer.domElement);
+
+            // 1. Core Sphere (The "Quark" / Nucleus)
+            const geometry = new THREE.IcosahedronGeometry(6, 2);
+            const material = new THREE.MeshBasicMaterial({ 
+                color: 0x00f3ff, /* Cyan wireframe */
+                wireframe: true,
+                transparent: true,
+                opacity: 0.3
+            });
+            const earth = new THREE.Mesh(geometry, material);
+            scene.add(earth);
+
+            // Inner Core (Solid Black/Void to block transparency)
+            const coreGeo = new THREE.IcosahedronGeometry(5.9, 2);
+            const coreMat = new THREE.MeshBasicMaterial({ color: 0x020205 });
+            const core = new THREE.Mesh(coreGeo, coreMat);
+            scene.add(core);
+
+            // 2. Energy Particles
+            const particlesGeometry = new THREE.BufferGeometry();
+            const particlesCount = 450; 
+            const posArray = new Float32Array(particlesCount * 3);
+            const colorsArray = new Float32Array(particlesCount * 3);
+
+            for(let i = 0; i < particlesCount * 3; i+=3) {
+                posArray[i] = (Math.random() - 0.5) * 70;
+                posArray[i+1] = (Math.random() - 0.5) * 70;
+                posArray[i+2] = (Math.random() - 0.5) * 70;
+                
+                // Mix Cyan and Yellow particles
+                const isCyan = Math.random() > 0.5;
+                colorsArray[i] = isCyan ? 0 : 1;   // R
+                colorsArray[i+1] = isCyan ? 0.95 : 0.86; // G
+                colorsArray[i+2] = isCyan ? 1 : 0;   // B
+            }
+
+            particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorsArray, 3));
+            
+            const particlesMaterial = new THREE.PointsMaterial({
+                size: 0.1,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+            const starMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(starMesh);
+
+            // 3. Satellite Ring System (The "Watts" Orbiting)
+            const satelliteGroup = new THREE.Group();
+            const satGeo = new THREE.OctahedronGeometry(0.3); // Changed to Octahedron for "Crystal/Energy" look
+            const satMat = new THREE.MeshBasicMaterial({ color: 0xffdd00 }); // Yellow satellites
+            
+            for (let i = 0; i < 12; i++) {
+                const sat = new THREE.Mesh(satGeo, satMat);
+                const angle = (i / 12) * Math.PI * 2;
+                const radius = 9.5;
+                sat.position.x = Math.cos(angle) * radius;
+                sat.position.z = Math.sin(angle) * radius;
+                sat.rotation.y = -angle;
+                satelliteGroup.add(sat);
+            }
+            
+            const pathGeo = new THREE.TorusGeometry(9.5, 0.02, 32, 64);
+            const pathMat = new THREE.MeshBasicMaterial({ color: 0xffdd00, transparent: true, opacity: 0.2 });
+            const path = new THREE.Mesh(pathGeo, pathMat);
+            path.rotation.x = Math.PI / 2;
+            satelliteGroup.add(path);
+
+            scene.add(satelliteGroup);
+
+            // Animation Loop
+            function animate() {
+                requestAnimationFrame(animate);
+                
+                // Fast rotation for high energy feel
+                earth.rotation.y += 0.002;
+                earth.rotation.z += 0.001;
+                
+                starMesh.rotation.y -= 0.0005;
+                
+                satelliteGroup.rotation.y += 0.005;
+                // Add wobble
+                satelliteGroup.rotation.x = Math.sin(Date.now() * 0.0005) * 0.2; 
+                
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            // Handle Resize
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        };
+
+        initThreeJS();
     </script>
 </body>
 </html>
