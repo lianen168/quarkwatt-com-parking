@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>QUARKWATT.COM | The Future of Quantum Energy & Exascale Power</title>
+    <title>QUARKWATT.COM | The Currency of Future Energy</title>
     
     <!-- SEO Optimization -->
-    <meta name="description" content="QuarkWatt.com: The defining domain for the Quantum Energy revolution. Perfect for Fusion Tech, AI Power Infrastructure, and Exascale Computing.">
-    <meta name="keywords" content="QuarkWatt, Quantum Energy, Fusion Power, Exawatts, AI Infrastructure, Premium Domain, Energy Grid, Future Tech">
+    <meta name="description" content="QuarkWatt.com: The defining domain for the Exascale Energy revolution. Perfect for Fusion Tech, AI Power Infrastructure, and Quantum Computing.">
+    <meta name="keywords" content="QuarkWatt, Quantum Energy, Fusion Power, Exawatts, AI Infrastructure, Premium Domain, Energy Grid, Future Tech, Elon Musk">
     <meta name="author" content="QuarkWatt.com Seller">
     <meta property="og:title" content="QUARKWATT.COM - Energy is the Real Currency">
-    <meta property="og:description" content="Exawatts or you’re not really trying. Secure the domain for the next energy revolution.">
+    <meta property="og:description" content="Space-based industries will vastly exceed the value of all of Earth. Secure the domain for the next energy revolution.">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
             --watt-yellow: #ffdd00;
             --energy-orange: #ff9d00;
             --deep-void: #020205;
-            --glass-bg: rgba(10, 10, 15, 0.8);
+            --glass-bg: rgba(10, 10, 15, 0.85);
             --glass-border: rgba(0, 243, 255, 0.2);
         }
 
@@ -40,30 +40,6 @@
             font-family: 'Rajdhani', sans-serif;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
-        }
-
-        /* --- DESKTOP ONLY: Custom Cursor --- */
-        @media (pointer: fine) {
-            * { cursor: none; }
-            #cursor {
-                display: block;
-                width: 20px;
-                height: 20px;
-                border: 2px solid var(--watt-yellow);
-                border-radius: 50%;
-                position: fixed;
-                pointer-events: none;
-                z-index: 9999;
-                transition: transform 0.05s linear;
-                box-shadow: 0 0 15px var(--watt-yellow);
-                mix-blend-mode: difference;
-            }
-        }
-
-        /* --- MOBILE OPTIMIZATION --- */
-        @media (pointer: coarse) {
-            #cursor { display: none !important; }
-            * { cursor: auto; }
         }
 
         /* Background Canvas */
@@ -93,6 +69,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding-top: 60px; /* Space for top quote */
         }
 
         .quote-container {
@@ -104,7 +81,7 @@
 
         .musk-quote {
             font-family: 'Share Tech Mono', monospace;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: var(--watt-yellow);
             background: rgba(0,0,0,0.8);
             padding: 15px 25px;
@@ -123,6 +100,7 @@
             font-weight: bold;
             opacity: 0.8;
             letter-spacing: 1px;
+            font-family: 'Rajdhani', sans-serif;
         }
 
         .main-title {
@@ -131,8 +109,8 @@
             font-weight: 900;
             display: flex;
             align-items: baseline;
-            gap: 10px;
-            margin-bottom: 2rem;
+            gap: 15px;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
             justify-content: center;
             text-shadow: 0 10px 30px rgba(0,0,0,0.8);
@@ -152,7 +130,7 @@
             animation: voltage-surge 0.2s infinite alternate;
         }
 
-        /* ANIMATION: .COM (Digital Anchor) */
+        /* ANIMATION: .COM (Stable Anchor) */
         .title-com {
             color: #fff;
             font-size: 3rem;
@@ -173,7 +151,16 @@
             100% { text-shadow: 0 0 30px var(--energy-orange), 0 0 60px var(--watt-yellow); opacity: 1; }
         }
 
-        /* Vision Section */
+        .sub-headline {
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Vision Section (Long Quote) */
         .vision-section {
             text-align: center;
             margin: 6rem 0;
@@ -185,26 +172,25 @@
         }
 
         .vision-quote {
-            font-size: 2rem;
-            font-weight: 700;
-            line-height: 1.4;
-            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.6;
+            color: #ddd;
             max-width: 900px;
             margin: 0 auto;
-            font-family: 'Orbitron';
         }
 
         .vision-author {
             display: block;
-            margin-top: 15px;
-            font-size: 1.2rem;
+            margin-top: 20px;
+            font-size: 1.1rem;
             color: var(--quark-cyan);
             font-family: 'Share Tech Mono', monospace;
-            font-weight: 400;
             letter-spacing: 2px;
         }
 
-        .highlight { color: var(--quark-cyan); text-shadow: 0 0 10px var(--quark-cyan); }
+        .highlight { color: var(--quark-cyan); font-weight: 700; text-shadow: 0 0 5px var(--quark-cyan); }
+        .highlight-yellow { color: var(--watt-yellow); font-weight: 700; }
 
         /* Grid */
         .grid-section {
@@ -218,7 +204,7 @@
             background: rgba(5, 5, 8, 0.85);
             border: 1px solid rgba(255, 221, 0, 0.15);
             padding: 30px 20px;
-            border-radius: 4px; /* Techy corners */
+            border-radius: 4px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
             backdrop-filter: blur(10px);
@@ -281,7 +267,6 @@
             background: linear-gradient(135deg, rgba(10,10,10,0.95), rgba(20,20,20,0.98));
             padding: 5rem 3rem;
             border: 1px solid var(--watt-yellow);
-            border-radius: 0; /* Square/Tech look */
             box-shadow: 0 0 60px rgba(255, 221, 0, 0.15);
             position: relative;
             max-width: 90%;
@@ -310,6 +295,7 @@
             display: inline-block;
             letter-spacing: 2px;
             position: relative;
+            cursor: pointer;
         }
 
         .btn-buy {
@@ -326,7 +312,7 @@
             border: 1px solid var(--quark-cyan);
         }
 
-        .btn-contact:active { background: var(--quark-cyan); color: #000; }
+        .btn-contact:hover { background: rgba(0, 243, 255, 0.1); color: #fff; box-shadow: 0 0 20px var(--quark-cyan); }
 
         .disclaimer {
             font-size: 0.75rem;
@@ -343,7 +329,7 @@
             .grid-section { grid-template-columns: 1fr; padding: 0 10px; }
             .price-card { padding: 3rem 1.5rem; }
             .price-tag { font-size: 3rem; }
-            .vision-quote { font-size: 1.5rem; }
+            .vision-quote { font-size: 1.1rem; }
         }
 
         @keyframes fadeIn { to { opacity: 1; } }
@@ -351,9 +337,6 @@
 </head>
 <body>
 
-    <!-- Cursor (Desktop Only) -->
-    <div id="cursor"></div>
-    
     <!-- 3D Background -->
     <div id="canvas-container"></div>
 
@@ -372,6 +355,10 @@
                 <span class="title-com">.COM</span>
             </div>
 
+            <div class="sub-headline">
+                "Energy is the <span class="highlight-yellow">real currency</span>." <span style="font-size:0.8em; opacity:0.7;">- Elon Musk</span>
+            </div>
+            
             <p style="font-family:'Share Tech Mono'; color: #888; letter-spacing: 3px; margin-top: 1rem; text-transform: uppercase;">
                 The Fundamental Particle of Power
             </p>
@@ -379,7 +366,7 @@
 
         <section class="vision-section">
             <p class="vision-quote">
-                "Energy is the <span class="highlight">real currency</span>."
+                "Space-based industries will <span class="highlight">vastly exceed the value of all of Earth</span>, given that you could harness roughly 100,000 times more energy than Earth..."
                 <span class="vision-author">- Elon Musk</span>
             </p>
         </section>
@@ -490,7 +477,7 @@
                 <p class="grid-desc">Extracting Watts from the fabric of space-time.</p>
             </div>
 
-            <!-- 10. AI Grid Management -->
+            <!-- 10. Neural Grids -->
             <div class="grid-item">
                 <svg class="icon-svg" viewBox="0 0 100 100">
                     <path d="M10 90 L30 50 L50 80 L70 30 L90 50" fill="none" stroke="var(--watt-yellow)" stroke-width="2" class="anim-dash"/>
@@ -573,14 +560,6 @@
             });
         }
 
-        // Custom Cursor Logic (Desktop)
-        const cursor = document.getElementById('cursor');
-        if (window.matchMedia("(pointer: fine)").matches) {
-            document.addEventListener('mousemove', (e) => {
-                cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-            });
-        }
-
         // Three.js Background (Optimized Sphere & Satellites)
         const initThreeJS = () => {
             const container = document.getElementById('canvas-container');
@@ -594,7 +573,7 @@
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
             container.appendChild(renderer.domElement);
 
-            // 1. Core Sphere (The "Quark" / Nucleus)
+            // 1. Core Sphere (Radius 6 as requested)
             const geometry = new THREE.IcosahedronGeometry(6, 2);
             const material = new THREE.MeshBasicMaterial({ 
                 color: 0x00f3ff, /* Cyan wireframe */
@@ -605,7 +584,7 @@
             const earth = new THREE.Mesh(geometry, material);
             scene.add(earth);
 
-            // Inner Core (Solid Black/Void to block transparency)
+            // Inner Core (Solid to block transparency)
             const coreGeo = new THREE.IcosahedronGeometry(5.9, 2);
             const coreMat = new THREE.MeshBasicMaterial({ color: 0x020205 });
             const core = new THREE.Mesh(coreGeo, coreMat);
@@ -641,10 +620,10 @@
             const starMesh = new THREE.Points(particlesGeometry, particlesMaterial);
             scene.add(starMesh);
 
-            // 3. Satellite Ring System (The "Watts" Orbiting)
+            // 3. Satellite Ring System (12 Satellites)
             const satelliteGroup = new THREE.Group();
-            const satGeo = new THREE.OctahedronGeometry(0.3); // Changed to Octahedron for "Crystal/Energy" look
-            const satMat = new THREE.MeshBasicMaterial({ color: 0xffdd00 }); // Yellow satellites
+            const satGeo = new THREE.OctahedronGeometry(0.3); // "Crystal" shape
+            const satMat = new THREE.MeshBasicMaterial({ color: 0xffdd00 }); // Yellow
             
             for (let i = 0; i < 12; i++) {
                 const sat = new THREE.Mesh(satGeo, satMat);
@@ -668,12 +647,9 @@
             function animate() {
                 requestAnimationFrame(animate);
                 
-                // Fast rotation for high energy feel
                 earth.rotation.y += 0.002;
                 earth.rotation.z += 0.001;
-                
                 starMesh.rotation.y -= 0.0005;
-                
                 satelliteGroup.rotation.y += 0.005;
                 // Add wobble
                 satelliteGroup.rotation.x = Math.sin(Date.now() * 0.0005) * 0.2; 
